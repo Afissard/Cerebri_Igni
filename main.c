@@ -15,12 +15,11 @@ TODO :
 - All
 
 OTHER INFORMATIONS :
-compile : gcc main.c -o cerebri
-run     : ./cerebri
-
+compile : gcc main.c -o bin/cerebri
+run     : ./bin/cerebri
 */
 
-#include <stdio.h>
+#include "main.h"
 
 int main(){
     printf("Cerebri Igni!\n");
