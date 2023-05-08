@@ -1,6 +1,13 @@
+#include <ncurses.h>
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
-int data[] = {};
-int *p_data = data;
+typedef struct data{
+    // data
+    uint8_t x;
+    uint8_t y;
+    char displayed;
+
+} data;
