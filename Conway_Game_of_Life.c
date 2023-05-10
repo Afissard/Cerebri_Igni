@@ -8,8 +8,8 @@ int tab[TAB_SIZE][TAB_SIZE] = {0};
 int tab_buff[TAB_SIZE][TAB_SIZE] = {0};
 
 void update(){
-    for(int y; y < TAB_SIZE-1; y++){
-        for(int x; x < TAB_SIZE-1; x ++){
+    for(int y=0; y < TAB_SIZE-1; y++){
+        for(int x=0; x < TAB_SIZE-1; x ++){
 
             int neighbors_nbr;
             neighbors_nbr = 
@@ -40,8 +40,8 @@ int main(){
     printf("Enter the number of generations : ");
     scanf("%d", &gen_nbr);
 
-    for(int y; y < TAB_SIZE-1; y++){
-        for(int x; x < TAB_SIZE-1; x ++){
+    for(int y=0; y < TAB_SIZE-1; y++){
+        for(int x=0; x < TAB_SIZE-1; x ++){
                 tab[y][x] =  rand() % 1; // generate random number between 0 and 1;
                 tab_buff[y][x] = tab[y][x];
         }
@@ -49,7 +49,7 @@ int main(){
     printf("Setup done.\n");
 
     // Simulation part
-    for(int gen; gen < gen_nbr; gen++){
+    for(int gen=0; gen < gen_nbr; gen++){
         printf("Generation number %d.\n", gen);
 
         update();
