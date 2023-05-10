@@ -6,7 +6,6 @@ My main inspiration for this language is the Orca "programming"
 language : https://esolangs.org/wiki/Orca and Minecraft Redstone.
 
 OBJECTIVES :
-- Retro challenge : 16bit era (variable type)
 - The interpreter will have to be as minimalist as possible.
 - The language have to be easy to understand, but hard to master.
 - The program could be edit in live like Orca, and save in some sort of txt file.
