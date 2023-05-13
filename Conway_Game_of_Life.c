@@ -1,6 +1,7 @@
 /*
 Information :
-Compile : gcc Conway_Game_of_Life.c -o life -l ncurses
+Compile : gcc Conway_Game_of_Life.c -o ./bin/life -l ncurses
+if targeting window : -o ./bin/life.exe
 */
 
 #include "Conway_Game_of_Life.h"
