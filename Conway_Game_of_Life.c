@@ -56,8 +56,8 @@ int main(){
 
         update();
 
-        for(int y; y < TAB_SIZE-1; y++){
-            for(int x; x < TAB_SIZE-1; x ++){
+        for(int y=0; y < TAB_SIZE-1; y++){
+            for(int x=0; x < TAB_SIZE-1; x ++){
                 tab[y][x] = tab_buff[y][x];
                 printf("%d", tab[y][x]);
             }
