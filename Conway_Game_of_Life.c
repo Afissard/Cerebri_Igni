@@ -17,13 +17,13 @@ void update(){
             tab[y][x-1]     + 0             + tab[y][x+1] + 
             tab[y+1][x-1]   + tab[y+1][x]   + tab[y+1][x+1];
 
-            if(neighbors_nbr <3){           // Lonely
+            if(neighbors_nbr <2){                               // Lonely
                 tab_buff[y][x] = 0;
             }
-            else if (neighbors_nbr = 3){    // Survive
-                tab_buff[y][x] = tab[y][x];
+            else if ((neighbors_nbr ==2) | (neighbors_nbr ==3)){// Survive or Birth
+                tab_buff[y][x] = 1;
             }
-            else if (neighbors_nbr >3){     // Overpopulated
+            else if (neighbors_nbr >3){                         // Overpopulated
                 tab_buff[y][x] = 1;
             }
         }
