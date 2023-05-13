@@ -15,7 +15,7 @@ void update(){
             neighbors_nbr = 
             tab[y-1][x-1]   + tab[y-1][x]   + tab[y-1][x+1] + 
             tab[y][x-1]     + 0             + tab[y][x+1] + 
-            tab[y+1][x-1]   + tab[y+1][x]   + tab[y+1][x+1];
+            tab[y+1][x-1]   + tab[y+1][x]   + tab[y+1][x+1]; // TODO: prevent going out of range of the board
 
             if(neighbors_nbr <2){                               // Lonely
                 tab_buff[y][x] = 0;
@@ -42,9 +42,11 @@ int main(){
 
     for(int y=0; y < TAB_SIZE-1; y++){
         for(int x=0; x < TAB_SIZE-1; x ++){
-                tab[y][x] =  rand() % 1; // generate random number between 0 and 1;
+                tab[y][x] =  rand() % 2; // generate random number between 0 and 1;
                 tab_buff[y][x] = tab[y][x];
+                printf("%d", tab[y][x]);
         }
+        printf("\n");
     }
     printf("Setup done.\n");
 
